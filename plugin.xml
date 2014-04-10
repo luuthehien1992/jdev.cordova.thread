@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
  
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
-           id="jdev.cordova.theard"
+           id="jdev.cordova.thread"
       version="0.1.0">
-    <name>Theard</name>
-    <description>Theard Cordova Plugin</description>
+    <name>Thread</name>
+    <description>Thread Cordova Plugin</description>
     <license>MIT</license>
     <keywords>phonegap,thread</keywords>
  
-    <js-module src="www/theard.js" name="TheardHelper">
-        <clobbers target="window.theard" />
+    <js-module src="www/thread.js" name="ThreadHelper">
+        <clobbers target="window.thread" />
     </js-module>
  
     <!-- android -->
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
-            <feature name="TheardHelper">
-                <param name="android-package" value="jdev.cordova.thread.TheardHelper"/>
+            <feature name="ThreadHelper">
+                <param name="android-package" value="jdev.cordova.thread.ThreadHelper"/>
             </feature>
         </config-file>
-        <source-file src="src/android/TheardHelper.java" target-dir="src/jdev/cordova/thread" />    		
+        <source-file src="src/android/ThreadHelper.java" target-dir="src/jdev/cordova/thread" />    		
      </platform>          
 </plugin>
